@@ -133,7 +133,7 @@ namespace ConsoleAppExamples
             cumle = Console.ReadLine();
             string[] kelimeler = cumle.Split(' ');
             Console.WriteLine(kelimeler.Length);
-            Console.ReadKey();
+            Console.ReadKey(); 
             #endregion
 
         }
