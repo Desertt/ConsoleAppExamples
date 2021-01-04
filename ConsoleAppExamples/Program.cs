@@ -128,12 +128,15 @@ namespace ConsoleAppExamples
             #region Klavyeden girilen bir cümledeki kelime sayısını bulunuz:
            ///<Algoritması>
            ///değişken tanımlanır.
+           ///Klavyeden cümle girilmesi beklenir.
+           ///cümle değişkene kelimeler halinde aktarılır.
+           ///gelen kelimelerin sayısı yazdırılır.
             string cumle = "";
             Console.Write("Cümle yazın: ");
             cumle = Console.ReadLine();
             string[] kelimeler = cumle.Split(' ');
             Console.WriteLine(kelimeler.Length);
-            Console.ReadKey(); //ddd
+            Console.ReadKey();
             #endregion
 
         }
