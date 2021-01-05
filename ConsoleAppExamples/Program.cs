@@ -126,17 +126,29 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Klavyeden girilen bir cümledeki kelime sayısını bulunuz:
-           ///<Algoritması>
-           ///değişken tanımlanır.
-           ///Klavyeden cümle girilmesi beklenir.
-           ///cümle değişkene kelimeler halinde aktarılır.
-           ///gelen kelimelerin sayısı yazdırılır.
-            string cumle = "";
-            Console.Write("Cümle yazın: ");
-            cumle = Console.ReadLine();
-            string[] kelimeler = cumle.Split(' ');
-            Console.WriteLine(kelimeler.Length);
-            Console.ReadKey();
+            ///<Algoritması>
+            ///değişken tanımlanır.
+            ///Klavyeden cümle girilmesi beklenir.
+            ///cümle değişkene kelimeler halinde aktarılır.
+            ///gelen kelimelerin sayısı yazdırılır.
+            /*
+              string cumle = "";
+              Console.Write("Cümle yazın: ");
+              cumle = Console.ReadLine();
+              string[] kelimeler = cumle.Split(' ');
+              Console.WriteLine(kelimeler.Length);
+              Console.ReadKey();
+            */
+            #endregion
+            #region Otopark Ucreti Hesaplama
+            ///<Algoritması>
+            ///Bir otoparka park eden taksinin 
+            ///1 saati 5TL, minibüsün 1 saati 6TL, ticari aracın 1 saati 6.5TL dir. Taksi 1 saatten sonraki her saat başı için %20 daha fazla, minibüs 1 saatten sonraki her saat başı için toplamda 
+            ///%21.5 ve ticari araç 1 saatten sonraki her saat başı için toplamda %25 daha fazla ödeme yapmaktadır. 
+            ///Buna göre klavyeden girilen araba tipi ve kalınan saat bilgisi girildikten sonra ekrana ödenecek otopark ücretini hesaplayan programın kodlarını yazınız.>
+            /// </Algoritması>
+            string taksi, miniBus, ticariArac;
+            int taksiUcret, miniBusUcret, ticariAracUcret;
             #endregion
 
         }
