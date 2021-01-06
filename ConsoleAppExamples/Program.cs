@@ -140,6 +140,7 @@ namespace ConsoleAppExamples
               Console.ReadKey();
             */
             #endregion
+         
             #region Otopark Ucreti Hesaplama
             ///<İstenilen>
             ///Bir otoparka park eden
@@ -150,77 +151,77 @@ namespace ConsoleAppExamples
             /// <Algoritması>
             /// 
             /// </Algoritması>
-            string taksi = "taksi", miniBus = "miniBus", ticariArac = "ticariArac";
-            string aracTipi;
-            double kalinanSure;
-            const int taksiBirSaat = 5;
-            const int miniBusBirSaat = 6;
-            const double ticariAracBirSaat = 6.5;
-            double taksiUcret, miniBusUcret, ticariAracUcret;
-            Console.Write("Araç tipini Giriniz : ");
-            aracTipi = Console.ReadLine();
-            Console.ReadLine();
-            Console.Write("Kalınan Süreyi Giriniz : ");
-            kalinanSure = Convert.ToDouble(Console.ReadLine());
-            Console.ReadLine();
+            /* string taksi = "taksi", miniBus = "miniBus", ticariArac = "ticariArac";
+             string aracTipi;
+             double kalinanSure;
+             const int taksiBirSaat = 5;
+             const int miniBusBirSaat = 6;
+             const double ticariAracBirSaat = 6.5;
+             double taksiUcret, miniBusUcret, ticariAracUcret;
+             Console.Write("Araç tipini Giriniz : ");
+             aracTipi = Console.ReadLine();
+             Console.ReadLine();
+             Console.Write("Kalınan Süreyi Giriniz : ");
+             kalinanSure = Convert.ToDouble(Console.ReadLine());
+             Console.ReadLine();
 
-            if (aracTipi == taksi)
-            {
-                if (kalinanSure == 0)
-                {
-                    Console.Write("Ödeme Hesaplanamadı");
+             if (aracTipi == taksi)
+             {
+                 if (kalinanSure == 0)
+                 {
+                     Console.Write("Ödeme Hesaplanamadı");
 
-                }
-                else if (kalinanSure == 1)
-                {
-                    Console.Write("Ödemeniz gereken Tutar : " + taksiBirSaat + " TL");
-                }
-                else
-                {
-                    Console.Write("Ödemeniz gereken Tutar : " + (taksiBirSaat + taksiBirSaat * 20 / 100) + " TL");
-                }
-                Console.ReadLine();
-            }
-            else if (aracTipi == miniBus)
-            {
-                if (kalinanSure == 0)
-                {
-                    Console.Write("Ödeme Hesaplanamadı");
+                 }
+                 else if (kalinanSure == 1)
+                 {
+                     Console.Write("Ödemeniz gereken Tutar : " + taksiBirSaat + " TL");
+                 }
+                 else
+                 {
+                     Console.Write("Ödemeniz gereken Tutar : " + (taksiBirSaat + taksiBirSaat * 20 / 100) + " TL");
+                 }
+                 Console.ReadLine();
+             }
+             else if (aracTipi == miniBus)
+             {
+                 if (kalinanSure == 0)
+                 {
+                     Console.Write("Ödeme Hesaplanamadı");
 
-                }
-                else if (kalinanSure == 1)
-                {
-                    Console.Write("Ödemeniz gereken Tutar : " + miniBusBirSaat + " TL");
-                }
-                else
-                {
-                    Console.Write("Ödemeniz gereken Tutar : " + (miniBusBirSaat + miniBusBirSaat * 21.5 / 100) + " TL");
-                }
-                Console.ReadLine();
-            }
+                 }
+                 else if (kalinanSure == 1)
+                 {
+                     Console.Write("Ödemeniz gereken Tutar : " + miniBusBirSaat + " TL");
+                 }
+                 else
+                 {
+                     Console.Write("Ödemeniz gereken Tutar : " + (miniBusBirSaat + miniBusBirSaat * 21.5 / 100) + " TL");
+                 }
+                 Console.ReadLine();
+             }
 
-            else if (aracTipi == ticariArac)
-            {
-                if (kalinanSure == 0)
-                {
-                    Console.Write("Ödeme Hesaplanamadı");
+             else if (aracTipi == ticariArac)
+             {
+                 if (kalinanSure == 0)
+                 {
+                     Console.Write("Ödeme Hesaplanamadı");
 
-                }
-                else if (kalinanSure == 1)
-                {
-                    Console.Write("Ödemeniz gereken Tutar : " + ticariAracBirSaat + " TL");
-                }
-                else
-                {
-                    Console.Write("Ödemeniz gereken Tutar : " + (ticariAracBirSaat + ticariAracBirSaat * 25 / 100) + " TL");
-                }
-                Console.ReadLine();
-            }
+                 }
+                 else if (kalinanSure == 1)
+                 {
+                     Console.Write("Ödemeniz gereken Tutar : " + ticariAracBirSaat + " TL");
+                 }
+                 else
+                 {
+                     Console.Write("Ödemeniz gereken Tutar : " + (ticariAracBirSaat + ticariAracBirSaat * 25 / 100) + " TL");
+                 }
+                 Console.ReadLine();
+             }
 
+         }
+            */
+            #endregion
         }
-
-        #endregion
-
     }
 }
 
