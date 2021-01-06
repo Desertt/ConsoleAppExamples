@@ -140,7 +140,7 @@ namespace ConsoleAppExamples
               Console.ReadKey();
             */
             #endregion
-         
+
             #region Otopark Ucreti Hesaplama
             ///<İstenilen>
             ///Bir otoparka park eden
@@ -149,7 +149,9 @@ namespace ConsoleAppExamples
             ///Buna göre klavyeden girilen araba tipi ve kalınan saat bilgisi girildikten sonra ekrana ödenecek otopark ücretini hesaplayan programın kodlarını yazınız.>
             /// </İstenilen>
             /// <Algoritması>
-            /// 
+            /// Değişkenler tanımlanır 
+            /// Klavyeden araç tipi ve kalınan sürenin girilmesi beklenir.
+            /// Karar mekanizması araç tiplerine göre hesaplamayı yapar ve kullanıcıya sunar.
             /// </Algoritması>
             /* string taksi = "taksi", miniBus = "miniBus", ticariArac = "ticariArac";
              string aracTipi;
@@ -220,6 +222,18 @@ namespace ConsoleAppExamples
 
          }
             */
+            #endregion
+
+            #region AlışSatış
+            ///<istenilen>
+            /// Bir komisyoncu sattığı mallardan fiyatı 50 TL kadar olanlardan %3, daha fazla olanlardan ise %2 komisyon almaktadır. 
+            /// Klavyeden girilen teker teker girilen 5 malın komisyonlarını bulup ekrana yazdıran ve en sonunda da toplam komisyonu
+            /// ekrana yazdıran programın kodlarını yazınız.
+            /// <istenilen/>
+            /// <Algoritması>
+            /// 
+            /// </Algoritması>
+
             #endregion
         }
     }
