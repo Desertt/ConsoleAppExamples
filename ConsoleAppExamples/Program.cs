@@ -141,16 +141,86 @@ namespace ConsoleAppExamples
             */
             #endregion
             #region Otopark Ucreti Hesaplama
-            ///<Algoritması>
-            ///Bir otoparka park eden taksinin 
-            ///1 saati 5TL, minibüsün 1 saati 6TL, ticari aracın 1 saati 6.5TL dir. Taksi 1 saatten sonraki her saat başı için %20 daha fazla, minibüs 1 saatten sonraki her saat başı için toplamda 
+            ///<İstenilen>
+            ///Bir otoparka park eden
+            /// Taksinin 1 saati 5TL, minibüsün 1 saati 6TL, ticari aracın 1 saati 6.5TL dir. Taksi 1 saatten sonraki her saat başı için %20 daha fazla, minibüs 1 saatten sonraki her saat başı için toplamda 
             ///%21.5 ve ticari araç 1 saatten sonraki her saat başı için toplamda %25 daha fazla ödeme yapmaktadır. 
             ///Buna göre klavyeden girilen araba tipi ve kalınan saat bilgisi girildikten sonra ekrana ödenecek otopark ücretini hesaplayan programın kodlarını yazınız.>
+            /// </İstenilen>
+            /// <Algoritması>
+            /// 
             /// </Algoritması>
-            string taksi, miniBus, ticariArac;
-            int taksiUcret, miniBusUcret, ticariAracUcret;
-            #endregion
+            string taksi = "taksi", miniBus = "miniBus", ticariArac = "ticariArac";
+            string aracTipi;
+            double kalinanSure;
+            const int taksiBirSaat = 5;
+            const int miniBusBirSaat = 6;
+            const double ticariAracBirSaat = 6.5;
+            double taksiUcret, miniBusUcret, ticariAracUcret;
+            Console.Write("Araç tipini Giriniz : ");
+            aracTipi = Console.ReadLine();
+            Console.ReadLine();
+            Console.Write("Kalınan Süreyi Giriniz : ");
+            kalinanSure = Convert.ToDouble(Console.ReadLine());
+            Console.ReadLine();
+
+            if (aracTipi == taksi)
+            {
+                if (kalinanSure == 0)
+                {
+                    Console.Write("Ödeme Hesaplanamadı");
+
+                }
+                else if (kalinanSure == 1)
+                {
+                    Console.Write("Ödemeniz gereken Tutar : " + taksiBirSaat + " TL");
+                }
+                else
+                {
+                    Console.Write("Ödemeniz gereken Tutar : " + (taksiBirSaat + taksiBirSaat * 20 / 100) + " TL");
+                }
+                Console.ReadLine();
+            }
+            else if (aracTipi == miniBus)
+            {
+                if (kalinanSure == 0)
+                {
+                    Console.Write("Ödeme Hesaplanamadı");
+
+                }
+                else if (kalinanSure == 1)
+                {
+                    Console.Write("Ödemeniz gereken Tutar : " + miniBusBirSaat + " TL");
+                }
+                else
+                {
+                    Console.Write("Ödemeniz gereken Tutar : " + (miniBusBirSaat + miniBusBirSaat * 21.5 / 100) + " TL");
+                }
+                Console.ReadLine();
+            }
+
+            else if (aracTipi == ticariArac)
+            {
+                if (kalinanSure == 0)
+                {
+                    Console.Write("Ödeme Hesaplanamadı");
+
+                }
+                else if (kalinanSure == 1)
+                {
+                    Console.Write("Ödemeniz gereken Tutar : " + ticariAracBirSaat + " TL");
+                }
+                else
+                {
+                    Console.Write("Ödemeniz gereken Tutar : " + (ticariAracBirSaat + ticariAracBirSaat * 25 / 100) + " TL");
+                }
+                Console.ReadLine();
+            }
 
         }
+
+        #endregion
+
     }
 }
+
