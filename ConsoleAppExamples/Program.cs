@@ -231,9 +231,27 @@ namespace ConsoleAppExamples
             /// ekrana yazdıran programın kodlarını yazınız.
             /// <istenilen/>
             /// <Algoritması>
-            /// 
+            /// Değişkenler tanımlanır.
+            /// Klavyeden sattığı malların fiyatını girmesi istenir.
+            /// Karar mekanizması girilen malların 50 TL yukarı veya aşağısına göre komisyonunu hesaplayıp ekrana yazdırır.
             /// </Algoritması>
-
+            double malFiyati;
+            double  Sonuc;
+            const int komisyon1 = 2;
+            const int komisyon2 = 3;
+            Console.Write("Satılan Malın Fiyatını Giriniz : ");
+            malFiyati = Convert.ToInt32(Console.ReadLine());
+            if (malFiyati > 0 && malFiyati < 50)
+            {
+                Sonuc = (malFiyati * komisyon1) / 100;
+                Console.WriteLine("Komisyon Bedeli : " + Sonuc);
+            }
+            else if(malFiyati>50)
+            {
+                Sonuc = malFiyati * komisyon2 / 100;
+                Console.WriteLine("Komisyon Bedeli : " + Sonuc);
+            }
+            Console.ReadLine();
             #endregion
         }
     }
