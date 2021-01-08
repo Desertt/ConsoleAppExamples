@@ -235,21 +235,49 @@ namespace ConsoleAppExamples
             /// Klavyeden sattığı malların fiyatını girmesi istenir.
             /// Karar mekanizması girilen malların 50 TL yukarı veya aşağısına göre komisyonunu hesaplayıp ekrana yazdırır.
             /// </Algoritması>
-            double malFiyati;
-            double  Sonuc;
-            const int komisyon1 = 2;
-            const int komisyon2 = 3;
-            Console.Write("Satılan Malın Fiyatını Giriniz : ");
-            malFiyati = Convert.ToInt32(Console.ReadLine());
-            if (malFiyati > 0 && malFiyati < 50)
+            /*
+              double malFiyati;
+              double  Sonuc;
+              const int komisyon1 = 2;
+              const int komisyon2 = 3;
+              Console.Write("Satılan Malın Fiyatını Giriniz : ");
+              malFiyati = Convert.ToInt32(Console.ReadLine());
+              if (malFiyati > 0 && malFiyati < 50)
+              {
+                  Sonuc = (malFiyati * komisyon1) / 100;
+                  Console.WriteLine("Komisyon Bedeli : " + Sonuc);
+              }
+              else if(malFiyati>50)
+              {
+                  Sonuc = malFiyati * komisyon2 / 100;
+                  Console.WriteLine("Komisyon Bedeli : " + Sonuc);
+              }
+              Console.ReadLine();
+            */
+            #endregion
+
+            #region Kullanıcı tarafından girilen üç sayıdan en büyük ile en küçük sayıyı toplayıp toplam sonucu ekrana yazdıran programı yazınız.
+            int sayi1, sayi2, sayi3,sonuc;
+            Console.Write("Klavyeden 1. Sayiyi Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadLine();
+            Console.Write("Klavyeden 2. Sayiyi Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadLine();
+            Console.Write("Klavyeden 3. Sayiyi Giriniz : ");
+            sayi3 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadLine();
+            if (sayi1>sayi2 || sayi1>sayi3)
             {
-                Sonuc = (malFiyati * komisyon1) / 100;
-                Console.WriteLine("Komisyon Bedeli : " + Sonuc);
+                Console.WriteLine("Sayi1 En Büyüktür : ");
             }
-            else if(malFiyati>50)
+            if (sayi2 > sayi1 || sayi2 > sayi3)
             {
-                Sonuc = malFiyati * komisyon2 / 100;
-                Console.WriteLine("Komisyon Bedeli : " + Sonuc);
+                Console.WriteLine("Sayi2 En Büyüktür : ");
+            }
+            if (sayi3 > sayi1 || sayi3 > sayi2)
+            {
+                Console.WriteLine("Sayi3 En Büyüktür : ");
             }
             Console.ReadLine();
             #endregion
