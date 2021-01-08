@@ -257,7 +257,9 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Kullanıcı tarafından girilen üç sayıdan en büyük ile en küçük sayıyı toplayıp toplam sonucu ekrana yazdıran programı yazınız.
-            int sayi1, sayi2, sayi3,sonuc;
+            int sayi1, sayi2, sayi3, sonuc;
+            int buyuk = 0;
+            int kucuk = 0;
             Console.Write("Klavyeden 1. Sayiyi Giriniz : ");
             sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.ReadLine();
@@ -267,18 +269,40 @@ namespace ConsoleAppExamples
             Console.Write("Klavyeden 3. Sayiyi Giriniz : ");
             sayi3 = Convert.ToInt32(Console.ReadLine());
             Console.ReadLine();
-            if (sayi1>sayi2 || sayi1>sayi3)
+            if (sayi1 > sayi2 && sayi1 > sayi3)
             {
-                Console.WriteLine("Sayi1 En Büyüktür : ");
+                Console.WriteLine("Sayi1 En Büyüktür : " + sayi1);
+                buyuk = sayi1;
             }
-            if (sayi2 > sayi1 || sayi2 > sayi3)
+            if (sayi2 > sayi1 && sayi2 > sayi3)
             {
-                Console.WriteLine("Sayi2 En Büyüktür : ");
+                Console.WriteLine("Sayi2 En Büyüktür : " + sayi2);
+                buyuk = sayi2;
             }
-            if (sayi3 > sayi1 || sayi3 > sayi2)
+            if (sayi3 > sayi1 && sayi3 > sayi2)
             {
-                Console.WriteLine("Sayi3 En Büyüktür : ");
+                Console.WriteLine("Sayi3 En Büyüktür : " + sayi3);
+                buyuk = sayi3;
             }
+            if (sayi1 < sayi2 && sayi1 < sayi3)
+            {
+                Console.WriteLine("Sayi1 En Küçüktür : " + sayi1);
+                kucuk = sayi1;
+            }
+            if (sayi2 < sayi1 && sayi2 < sayi3)
+            {
+                Console.WriteLine("Sayi2 En Küçüktür : " + sayi2);
+                kucuk = sayi2;
+            }
+            if (sayi3 < sayi1 && sayi3 < sayi2)
+            {
+                Console.WriteLine("Sayi3 En Küçüktür : " + sayi3);
+                kucuk = sayi3;
+
+            }
+            Console.WriteLine("===========Toplamları================\n");
+            sonuc = buyuk + kucuk;
+            Console.WriteLine(sonuc);
             Console.ReadLine();
             #endregion
         }
