@@ -257,6 +257,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Kullanıcı tarafından girilen üç sayıdan en büyük ile en küçük sayıyı toplayıp toplam sonucu ekrana yazdıran programı yazınız.
+            /*
             int sayi1, sayi2, sayi3, sonuc;
             int buyuk = 0;
             int kucuk = 0;
@@ -304,6 +305,11 @@ namespace ConsoleAppExamples
             sonuc = buyuk + kucuk;
             Console.WriteLine(sonuc);
             Console.ReadLine();
+            */
+            #endregion
+
+            #region Maaşı ve zam oranı girilen işçinin zamlı maaşını hesaplayarak ekranda gösteren C# örneği:
+
             #endregion
         }
     }
