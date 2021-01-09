@@ -310,6 +310,20 @@ namespace ConsoleAppExamples
 
             #region Maaşı ve zam oranı girilen işçinin zamlı maaşını hesaplayarak ekranda gösteren C# örneği:
 
+            double maas,zamOrani,sonuc;
+            Console.Write("İşçinin Maaş bilgisiniz giriniz : ");
+            maas = Convert.ToDouble(Console.ReadLine());
+            Console.Write("İşçinin Aldığı Zam Oranını Giriniz : ");
+            zamOrani = Convert.ToDouble(Console.ReadLine());
+            sonuc = maas + maas * zamOrani / 100;
+            Console.WriteLine("İşçinin Son Aldığı Zam İle Zamlı Maaşı : " + sonuc);
+            Console.ReadLine();
+
+
+
+
+
+
             #endregion
         }
     }
