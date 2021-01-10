@@ -309,7 +309,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Maaşı ve zam oranı girilen işçinin zamlı maaşını hesaplayarak ekranda gösteren C# örneği:
-
+            /*
             double maas,zamOrani,sonuc;
             Console.Write("İşçinin Maaş bilgisiniz giriniz : ");
             maas = Convert.ToDouble(Console.ReadLine());
@@ -318,13 +318,60 @@ namespace ConsoleAppExamples
             sonuc = maas + maas * zamOrani / 100;
             Console.WriteLine("İşçinin Son Aldığı Zam İle Zamlı Maaşı : " + sonuc);
             Console.ReadLine();
+            */
+            #endregion
 
+            #region DiziCalismasi 
+            ///<istenilen>Elemanları tam sayı olan bir A dizisinin(20 elemanlı)
+            ///rastgele sayılar atayan, sonra dizi elemanlarının aritmetik ortalamasını hesaplayan 
+            ///ve elemanlardan kaç tanesinin bu ortalamadan büyük ve küçük olduğunu sayan programın c# kodlarını yazınız.</ istenilen>
 
+            /*20 elamanı bir değişkene atarak ekrana rastgele gelen sayıları yazdırdık.*/
+            //int sayi;
+            //Random RndNumber = new Random();
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    sayi = RndNumber.Next(1, 20);
+            //    Console.WriteLine("Rastgele Gelen Sayi : " + sayi + "\n");
+            //}
+            //Console.ReadLine();
+            int[] dizi = new int[20]; //dizi tanımlandı veritipi[] veriAdi = new veritipi[dizide oluşacak eleman sayısı]
+            double avrgNumbers;
+            double topla = 0 ;
+            double ortalamadanBuyukAdet = 0 , ortalamadanKucukAdet=0;
+            Random RndNumber = new Random();
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                dizi[i] = RndNumber.Next(0, 20);
+              
+            }
+            foreach (int eleman in dizi)
+            {
+                Console.WriteLine(eleman);
+                topla += eleman;
+            }
+            Console.Write("===========================");
+            Console.Write("Diziye Girilen Sayıların Aritmetik Ortalaması");
+            Console.Write("===========================\n");
+            Console.Write("Sayıların Toplamı : " + topla + "\n");
+            avrgNumbers = topla / 20;
+            Console.WriteLine("Aritmetik Ortalaması" + avrgNumbers);
+            foreach (int dizim in dizi)
+            {
+                if (dizim > avrgNumbers) 
+                    ortalamadanBuyukAdet += 1;
+                else ortalamadanKucukAdet += 1;
 
+            }
+            Console.WriteLine("Ortalama : {0}. Ortalamadan Büyük Eleman Sayısı : {1}, Ortalamadan Küçük Eleman Sayısı : {2}", avrgNumbers, ortalamadanBuyukAdet, ortalamadanKucukAdet);
+            Console.ReadKey();
 
+            Console.Read();
 
 
             #endregion
+
+
         }
     }
 }
