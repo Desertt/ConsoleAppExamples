@@ -335,6 +335,9 @@ namespace ConsoleAppExamples
             //    Console.WriteLine("Rastgele Gelen Sayi : " + sayi + "\n");
             //}
             //Console.ReadLine();
+
+            /*İstenen Program*/
+            /*
             int[] dizi = new int[20]; //dizi tanımlandı veritipi[] veriAdi = new veritipi[dizide oluşacak eleman sayısı]
             double avrgNumbers;
             double topla = 0 ;
@@ -367,7 +370,11 @@ namespace ConsoleAppExamples
             Console.ReadKey();
 
             Console.Read();
+            */
 
+            #endregion
+
+            #region Klavyeden girilen metnin kaç kelimeden oluştuğunu bulan Console Application örneği:
 
             #endregion
 
