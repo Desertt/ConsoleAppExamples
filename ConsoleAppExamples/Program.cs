@@ -387,14 +387,58 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Girilen String ifadede boşluk karakterine kadar olan kısmı yazdıran
-            string ifade;
-            Console.Write("Metin Giriniz : ");
-            ifade = Console.ReadLine();
-            int no = ifade.IndexOf(' ');
-            Console.WriteLine(ifade.Substring(0, no));
+            /*
+             string ifade;
+             Console.Write("Metin Giriniz : ");
+             ifade = Console.ReadLine();
+             int no = ifade.IndexOf(' ');
+             Console.WriteLine(ifade.Substring(0, no));
+             Console.ReadKey();
+            */
+            #endregion
+
+            #region Elemanları kullanıcı tarafından girilen 10 elemanlı string bir dizide, en uzun metni, en uzun metnin karakter sayısını ve en uzun metnin index numarasını bulan ve ekrana yazdıran Console Örneği:
+            ///<summary>
+            ///Elemanları kullanıcı tarafından girilen 10 elemanlı string bir dizide,
+            ///en uzun metni, en uzun metnin karakter sayısını ve en uzun metnin index 
+            ///numarasını bulan ve ekrana yazdıran Console Örneği:
+            ///</summary>
+          /*
+            
+            string enUzunMetin = "";
+            int uzunluk = 0;
+            int indexNo = 0;
+            string[] cumle = new string[10];
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("{0}. elemanı giriniz : ", i + 1);
+                cumle[i] = Console.ReadLine();
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (cumle[i].Length > uzunluk)
+                {
+                    uzunluk = cumle[i].Length;
+                    enUzunMetin = cumle[i];
+                    indexNo = i;
+
+                }
+
+            }
+            Console.WriteLine("====================");
+            Console.WriteLine("Dizi içindeki en uzun metin: {0}", enUzunMetin);
+            Console.WriteLine("Dizi içindeki en uzun metnin index numarası : {0}", indexNo);
+            Console.WriteLine("Dizi içindeki en uzun metnin karakter sayısı: {0}", uzunluk);
             Console.ReadKey();
 
+
+
             #endregion
+
+
+            */
+
 
         }
     }
