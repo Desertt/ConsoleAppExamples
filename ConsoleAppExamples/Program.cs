@@ -403,42 +403,84 @@ namespace ConsoleAppExamples
             ///en uzun metni, en uzun metnin karakter sayısını ve en uzun metnin index 
             ///numarasını bulan ve ekrana yazdıran Console Örneği:
             ///</summary>
-          /*
-            
-            string enUzunMetin = "";
-            int uzunluk = 0;
-            int indexNo = 0;
-            string[] cumle = new string[10];
-            for (int i = 0; i < 10; i++)
-            {
-                Console.Write("{0}. elemanı giriniz : ", i + 1);
-                cumle[i] = Console.ReadLine();
-            }
+            /*
 
-            for (int i = 0; i < 10; i++)
-            {
-                if (cumle[i].Length > uzunluk)
-                {
-                    uzunluk = cumle[i].Length;
-                    enUzunMetin = cumle[i];
-                    indexNo = i;
+              string enUzunMetin = "";
+              int uzunluk = 0;
+              int indexNo = 0;
+              string[] cumle = new string[10];
+              for (int i = 0; i < 10; i++)
+              {
+                  Console.Write("{0}. elemanı giriniz : ", i + 1);
+                  cumle[i] = Console.ReadLine();
+              }
 
-                }
+              for (int i = 0; i < 10; i++)
+              {
+                  if (cumle[i].Length > uzunluk)
+                  {
+                      uzunluk = cumle[i].Length;
+                      enUzunMetin = cumle[i];
+                      indexNo = i;
 
-            }
-            Console.WriteLine("====================");
-            Console.WriteLine("Dizi içindeki en uzun metin: {0}", enUzunMetin);
-            Console.WriteLine("Dizi içindeki en uzun metnin index numarası : {0}", indexNo);
-            Console.WriteLine("Dizi içindeki en uzun metnin karakter sayısı: {0}", uzunluk);
-            Console.ReadKey();
+                  }
 
+              }
+              Console.WriteLine("====================");
+              Console.WriteLine("Dizi içindeki en uzun metin: {0}", enUzunMetin);
+              Console.WriteLine("Dizi içindeki en uzun metnin index numarası : {0}", indexNo);
+              Console.WriteLine("Dizi içindeki en uzun metnin karakter sayısı: {0}", uzunluk);
+              Console.ReadKey();
 
+                          */
 
             #endregion
 
+            #region C# Console uygulamasında Elemanları kullanıcı tarafından dışarıdan girilen 10 elemanlı bir dizinin elemanlarını %10 arttıran ve ekrana yazdıran örnek:
 
+            /*
+            int[] dizi = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("{0}.Elemanı Giriniz  :", i + 1);
+                dizi[i] = Convert.ToInt32(Console.ReadLine());
+            }
+             Console.WriteLine("=========================================");
+            // Yazdırma işlemi
+            for(int i=0;i<10;i++)
+            {
+                dizi[i]=dizi[i]+(dizi[i]*10/100);
+                Console.WriteLine("Dizinin {0}. indexi : {1} ", i, dizi[i]);
+            }
+            Console.ReadKey();
             */
 
+            #endregion
+
+            #region Verilen bir karakter dizininin substring() metodunu kullanarak string içerisinde arama yapan ve kaç defa geçtiğini bulan program:
+            string metin = "";
+            Console.Write("Bir metin giriniz : ");
+            metin = Console.ReadLine();
+            string searchBy = "abcd";
+            int metinUzunluk = metin.Length;
+            int searchByLength = searchBy.Length;
+            int sayac = 0;
+            for (int i = 0; i <=metinUzunluk-searchByLength; i++)
+            {
+                if (metin.Substring(i,searchByLength)==searchBy)
+                {
+                    sayac++;
+                }
+                
+            }
+
+            Console.WriteLine("Sonuc :" + sayac);
+            Console.ReadKey();
+            #endregion
+
+            #region Verilen bir string metnin içerisinde harf yada karakterlerin her birinden kaç adet olduğunu bulan program
+
+            #endregion
 
         }
     }
