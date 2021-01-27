@@ -458,7 +458,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Verilen bir karakter dizininin substring() metodunu kullanarak string içerisinde arama yapan ve kaç defa geçtiğini bulan program:
-            string metin = "";
+            /*string metin = "";
             Console.Write("Bir metin giriniz : ");
             metin = Console.ReadLine();
             string searchBy = "abcd";
@@ -476,10 +476,11 @@ namespace ConsoleAppExamples
 
             Console.WriteLine("Sonuc :" + sayac);
             Console.ReadKey();
+            */
             #endregion
 
             #region Verilen bir string metnin içerisinde harf yada karakterlerin her birinden kaç adet olduğunu bulan program
-
+            //
             #endregion
 
         }
