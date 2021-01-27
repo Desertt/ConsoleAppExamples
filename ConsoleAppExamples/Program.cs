@@ -480,36 +480,36 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Verilen bir string metnin içerisinde harf yada karakterlerin her birinden kaç adet olduğunu bulan program
+            
+            //string metin = "";
+            //Console.Write("Bir Metin Giriniz : ");
+            //metin = Console.ReadLine();
+            //metin = metin.ToLower();
+            //string characters = "0123456789abcdefghijklmnopqrstuvwxyz.?,;*/";
+            //int[] count = new int[characters.Length];
 
-            string metin = "";
-            Console.Write("Bir Metin Giriniz : ");
-            metin = Console.ReadLine();
-            metin = metin.ToLower();
-            string characters = "0123456789abcdefghijklmnopqrstuvwxyz.?,;*/";
-            int[] count = new int[characters.Length];
+            //for (int i = 0; i < metin.Length; i++)
+            //{
+            //    int index = characters.IndexOf(metin[i]);
+            //    if (index < 0)
+            //        continue;
+            //    else
+            //    {
+            //        count[index]++;
+            //    }
+            //}
+            //for (int i = 0; i < count.Length; i++)
+            //{
+            //    if (count[i] < 1)
+            //        continue;
+            //    else
+            //    {
+            //        Console.WriteLine(characters[i] + " " + count[i]);
+            //    }
+            //}
 
-            for (int i = 0; i < metin.Length; i++)
-            {
-                int index = characters.IndexOf(metin[i]);
-                if (index < 0)
-                    continue;
-                else
-                {
-                    count[index]++;
-                }
-            }
-            for (int i = 0; i < count.Length; i++)
-            {
-                if (count[i] < 1)
-                    continue;
-                else
-                {
-                    Console.WriteLine(characters[i] + " " + count[i]);
-                }
-            }
-
-            Console.ReadKey();
-
+            //Console.ReadKey();
+          
 
             #endregion
 
