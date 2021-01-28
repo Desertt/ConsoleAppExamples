@@ -480,7 +480,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Verilen bir string metnin içerisinde harf yada karakterlerin her birinden kaç adet olduğunu bulan program
-            
+
             //string metin = "";
             //Console.Write("Bir Metin Giriniz : ");
             //metin = Console.ReadLine();
@@ -509,8 +509,41 @@ namespace ConsoleAppExamples
             //}
 
             //Console.ReadKey();
-          
 
+
+            #endregion
+
+            #region Kullanıcının girdiği 3 sayıdan en büyük olanını ekranda gösteren
+            /*
+            int sayi1, sayi2, sayi3;
+            int  enBuyuk=0;
+            Console.Write("1. Sayıyı Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("2. Sayıyı Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("3. Sayıyı Giriniz : ");
+            sayi3 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            if (sayi1>sayi2 && sayi1>sayi3)
+            {
+                enBuyuk = sayi1;
+            }
+            else if(sayi2 > sayi1 && sayi2 > sayi3)
+            {
+
+                enBuyuk = sayi2;
+            }
+            else if (sayi3 > sayi1 && sayi3 > sayi2)
+            {
+
+                enBuyuk = sayi3;
+            }
+
+            Console.Write("En Buyuk Sayı : " + enBuyuk);
+            Console.ReadKey();
+            */
             #endregion
 
         }
