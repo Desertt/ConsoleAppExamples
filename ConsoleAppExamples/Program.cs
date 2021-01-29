@@ -561,6 +561,56 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region 15×15 lik dizi içine rasgele “S” ve “O” harfleri atayan ve ekranda gösteren örnek: 
+            /*
+             Random rnd = new Random();
+             string[,] dizi = new string[15, 15];
+             for (int i = 0; i < 15; i++)
+             {
+                 for (int j = 0; j < 15; j++)
+                 {
+
+                     if (rnd.Next(0, 2) == 0)
+                     {
+                         dizi[i, j] = "S";
+                         Console.Write(dizi[i, j]);
+                     }
+                     else
+                     {
+                         dizi[i, j] = "O";
+                         Console.Write(dizi[i, j]);
+                     }
+                     Console.WriteLine();
+                 }
+                 Console.ReadKey();
+             }
+            */
+            #endregion
+
+            #region İki iç açısı verilen üçgenin diğer açısını bulan örnek:
+            /*
+            
+            ///<summary>
+            ///İç Açılar Toplamı 180 derece
+            /// </summary>
+            int aci1 = 0;
+            int aci2 = 0;
+            int aci3 = 0;
+            int ikiAciToplami = 0;
+            int tumAci = 180;
+            Console.Write("1. Açıyı Giriniz : ");
+            aci1 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("2. Açıyı Giriniz : ");
+            aci2 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            ikiAciToplami = aci1 + aci2;
+            Console.Write("Üçgenin Diğer Açısı : " + (tumAci - ikiAciToplami));
+            Console.ReadKey();
+            */
+
+            #endregion
+
         }
     }
 }
