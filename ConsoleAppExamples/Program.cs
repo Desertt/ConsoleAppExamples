@@ -546,6 +546,21 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region 10 karakterli rasgele karakterlerden oluşan metin oluşturan örnek:
+            /*
+            string charText="";
+            string[] charArray = new string[] { "a","e","ı","i","o","ö","u","ü","x","y","z" };
+            Random rndText = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                charText += charArray[rndText.Next(charArray.Length)];
+            }
+            Console.WriteLine(charText);
+            Console.ReadKey();
+
+            */
+            #endregion
+
         }
     }
 }
