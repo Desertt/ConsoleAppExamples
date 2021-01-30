@@ -612,6 +612,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region İçerisinde isimler bulunan string bir diziyi en son elemandan itibaren ekrana yazdıran örnek:
+            /*
             string[] dizi = new string[] {"Ali","Veli","Deli","Mustafa","Miraç","Merve","Kazım","Ayten"};
             int diziSonElemani =dizi.Length-1;
             //foreach (var dizielemanlari in dizi)
@@ -623,8 +624,8 @@ namespace ConsoleAppExamples
             {
                 Console.WriteLine(dizi[i]);
             }
-            Console.ReadKey();
-
+            Console.ReadKey(); 
+            */
             #endregion
 
         }
