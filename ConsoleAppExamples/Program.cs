@@ -628,6 +628,27 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Taban değeri ve üssü kullanıcı tarafından girilen işlemin sonucunu For döngüsü kullanarak hesaplayan örnek:
+            /*
+             int tabanValue = 0;
+             int usDeger = 0;
+             int sonuc=0;
+             Console.Write("Taban Değerini Giriniz :");
+             tabanValue = Convert.ToInt32(Console.ReadLine());
+             Console.ReadKey();
+             Console.Write("Us Değerini Giriniz :");
+             usDeger = Convert.ToInt32(Console.ReadLine());
+             Console.ReadKey();
+             for (int i = 0; i < usDeger; i++)
+             {
+                 sonuc += tabanValue;
+             }
+
+             Console.Write("Girilen Değerin Sonucu : " + sonuc);
+             Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
