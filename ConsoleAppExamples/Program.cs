@@ -649,6 +649,23 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Dik kenar uzunlukları verilen dik üçgende hipotenüs hesaplayan örnek:
+            double dikKenar1;
+            double dikKenar2;
+            double uzunKenar;
+            double sonuc;
+            Console.Write("1. Dik Kenarı Giriniz :");
+            dikKenar1 = Convert.ToDouble(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("2. Dik Kenarı Giriniz :");
+            dikKenar2 = Convert.ToDouble(Console.ReadLine());
+            Console.ReadKey();
+            uzunKenar = Math.Sqrt((dikKenar1 * dikKenar1) + (dikKenar2 * dikKenar2));
+            Console.Write("Hipotenüs Değeri : " + uzunKenar);
+            Console.ReadKey();
+
+            #endregion
+
         }
     }
 }
