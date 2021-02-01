@@ -694,6 +694,30 @@ namespace ConsoleAppExamples
 
             #endregion
 
+            #region Kullanıcının girdiği 5 adet sayıyı bir diziye atayarak, bu dizide bulunan çift sayıların ortalamasını ekrana yazan konsol uygulamasını yapınız.
+            /*
+             int toplam = 0;
+            int adet = 0;
+            double avg=0;
+            int[] diziSayi = new int[5];
+            for (int i = 0; i <diziSayi.Length; i++)
+            {
+                Console.Write("Sayi Giriniz : ");
+                diziSayi[i] += Convert.ToInt32(Console.ReadLine());
+                if (diziSayi[i] % 2 ==0)
+                {
+                    adet++;
+                    toplam += diziSayi[i];
+
+                }
+                
+            }
+            avg = toplam / adet;
+            Console.Write("Dizi içerisinde ki çift sayların ortalaması : " + avg);
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
