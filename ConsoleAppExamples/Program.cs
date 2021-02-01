@@ -650,6 +650,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Dik kenar uzunlukları verilen dik üçgende hipotenüs hesaplayan örnek:
+            /*
             double dikKenar1;
             double dikKenar2;
             double uzunKenar;
@@ -663,6 +664,33 @@ namespace ConsoleAppExamples
             uzunKenar = Math.Sqrt((dikKenar1 * dikKenar1) + (dikKenar2 * dikKenar2));
             Console.Write("Hipotenüs Değeri : " + uzunKenar);
             Console.ReadKey();
+            */
+            #endregion
+
+            #region  C# Console Uygumasında kullanıcıdan yaş bilgisi istenerek eğer yaşı 18 ve daha büyükse “Ehliyet Alabilirsiniz” yazan,değilse Ehliyet alamazsınız diyerek Ehliyet alabilmesi için kaç yılı kaldığını ekranda gösteren örnek:
+
+            /*
+            int dogumyili, yas, thisYear,kalanyil;
+            thisYear = 2021;
+            Console.Write("Doğum Yılınızı Giriniz : ");
+            dogumyili = Convert.ToInt32(Console.ReadLine());
+            yas = thisYear - dogumyili;
+             
+            if (yas<18)
+            {
+                Console.Write("Ehliyet Alamazsınız !\n");
+                kalanyil = 18 - yas;
+                Console.Write("Ehliyet Almanıza {0} ",kalanyil + " Yıl Kaldı !");
+
+            }
+            else
+            {
+                Console.Write("Ehliyet Alabilirsiniz");
+            }
+            Console.ReadKey();
+            
+            */
+
 
             #endregion
 
