@@ -718,6 +718,19 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Klavyeden girilen 3 sayının toplamını ekrana yazdıran program
+            /*
+            int sayi=0;
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Klavyeden Sayı Giriniz : ");
+                sayi += Convert.ToInt32(Console.ReadLine());
+            }
+            Console.Write("Girilen 3 Sayının Toplamı : " + sayi);
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
