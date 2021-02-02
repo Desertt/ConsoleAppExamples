@@ -731,6 +731,24 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Girilen sayı çift ise yarısını , tek ise 2 katını alarak ekrana yazdıran program.
+            /*
+            int sayi;
+            Console.Write("Sayı Giriniz : ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            if (sayi%2==0)
+            {
+                sayi = sayi / 2;
+            }
+            else
+            {
+                sayi = sayi * 2;
+            }
+            Console.Write("Girilen Sayının Sonucu :" + sayi);
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
