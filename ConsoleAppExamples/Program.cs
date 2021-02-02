@@ -750,6 +750,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Kullanıcının yapmış olduğu seçime göre girmiş olduğu sayıları toplayan, çıkaran, çarpan yada bölme işlemi yapan program örneği.
+            /*
             int sayi1=0;
             int sayi2 = 0;
             double sonuc = 0;
@@ -790,7 +791,7 @@ namespace ConsoleAppExamples
                 Console.WriteLine("YANLIŞ OPERATÖR GİRDİNİZ!");
             }
             Console.ReadKey();
-
+            */
             #endregion
         }
     }
