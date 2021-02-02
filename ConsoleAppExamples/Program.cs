@@ -749,6 +749,49 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Kullanıcının yapmış olduğu seçime göre girmiş olduğu sayıları toplayan, çıkaran, çarpan yada bölme işlemi yapan program örneği.
+            int sayi1=0;
+            int sayi2 = 0;
+            double sonuc = 0;
+            char opt;
+            Console.Write("\n\tMenu");
+            Console.Write("\nToplama İçin + Tuşuna Basın");
+            Console.Write("\nÇıkarma İçin - Tuşuna Basın");
+            Console.Write("\nÇarpma İçin * Tuşuna Basın");
+            Console.Write("\nBölme İçin / Tuşuna Basın");
+            Console.Write("\n\n Birinci Sayıyı Giriniz :");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n\n İkinci Sayıyı Giriniz :");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nİşlem Yapmak İçin Bir Operator Seçiniz:\t");
+            opt = Convert.ToChar(Console.ReadLine());
+            if (opt == '+')
+            {
+                sonuc = sayi1 + sayi2;
+                Console.WriteLine("\n{0} + {1} = {2}", sayi1, sayi2, sonuc);
+            }
+            else if (opt=='-')
+            {
+                sonuc = sayi1 - sayi2;
+                Console.WriteLine("\n{0} - {1} = {2}", sayi1, sayi2, sonuc);
+            }
+            else if (opt == '*')
+            {
+                sonuc = sayi1 * sayi2;
+                Console.WriteLine("\n{0} x {1} = {2}", sayi1, sayi2, sonuc);
+            }
+            else if (opt == '/')
+            {
+                sonuc = (double)sayi1 / sayi2;
+                Console.WriteLine("\n{0} / {1} = {2}", sayi1, sayi2, sonuc);
+            }
+            else
+            {
+                Console.WriteLine("YANLIŞ OPERATÖR GİRDİNİZ!");
+            }
+            Console.ReadKey();
+
+            #endregion
         }
     }
 }
