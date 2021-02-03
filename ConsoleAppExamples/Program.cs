@@ -793,6 +793,21 @@ namespace ConsoleAppExamples
             Console.ReadKey();
             */
             #endregion
+
+            #region Klavyeden girilen 3 sayının ortalamasını alan program
+            /*
+             int sayi=0;
+             double avg = 0;
+             for (int i = 0; i < 3; i++)
+             {
+                 Console.Write("Sayı Giriniz : ");
+                 sayi += Convert.ToInt32(Console.ReadLine());
+             }
+             avg = sayi / 3;
+             Console.Write("Girdiğiniz Sayıların Ortalaması : " + avg);
+             Console.ReadKey();
+            */
+            #endregion
         }
     }
 }
