@@ -830,6 +830,18 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Dairenin alanını hesaplayan program
+            const double pi=3.14;
+            double yaricap = 0;
+            double daireAlani = 0;
+            Console.Write("Dairenin Yariçapını Giriniz : ");
+            yaricap = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            daireAlani = Convert.ToDouble(yaricap * yaricap * pi);
+            Console.WriteLine("Dairenin Alanı : " + daireAlani);
+            Console.ReadKey();
+
+            #endregion
 
         }
     }
