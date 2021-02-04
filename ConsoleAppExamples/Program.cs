@@ -808,6 +808,29 @@ namespace ConsoleAppExamples
              Console.ReadKey();
             */
             #endregion
+
+            #region Klavyeden girilen 2 sayıdan büyük olanını bulan programı yazınız
+            /*
+            int sayi1=0, sayi2=0;
+            Console.Write("1. Sayıyı Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("2. Sayıyı Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            if (sayi1>sayi2)
+            {
+                Console.Write("1. Sayı 2. Sayıdan Daha Büyüktür ! ");
+            }
+            else if (sayi2>sayi1)
+            {
+                Console.Write("2. Sayı 1. Sayıdan Daha Büyüktür ! ");
+            }
+            Console.ReadKey();
+            */
+            #endregion
+
+
         }
     }
 }
