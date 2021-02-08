@@ -845,6 +845,27 @@ namespace ConsoleAppExamples
 
             #endregion
 
+            #region Klavyeden girilen 2 sayıdan büyük olanını bulan büyükten küçüğe altalta yazdıran program
+            /*
+            int sayi1 = 0, sayi2 = 0;
+            Console.Write("Sayı1 Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("Sayı2 Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            if (sayi1>sayi2)
+            {
+                Console.Write("Büyükten Küçüğe Sıralama : \n" + sayi1 + "\n" + sayi2);
+            }
+            else if (sayi2 > sayi1)
+            {
+                Console.Write("Büyükten Küçüğe Sıralama : \n" + sayi2 + "\n" + sayi1);
+            }
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
