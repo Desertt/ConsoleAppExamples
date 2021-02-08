@@ -846,7 +846,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Klavyeden girilen 2 sayıdan büyük olanını bulan büyükten küçüğe altalta yazdıran program
-            /*
+            /**
             int sayi1 = 0, sayi2 = 0;
             Console.Write("Sayı1 Giriniz : ");
             sayi1 = Convert.ToInt32(Console.ReadLine());
