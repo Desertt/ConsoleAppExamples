@@ -866,6 +866,34 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region C# Console Uygulamasında Kullanıcıdan 2 tane sayı istenerek 1. sayının 2. sayıya tam bölünmesi durumunda “Tam bölünüyor” yazan, aksi durumda Tam bölünmüyor diyerek kalanı ekranda gösteren örnek:
+            ///<summary>
+            ///C# Console Uygulamasında Kullanıcıdan 2 tane sayı istenerek 1. sayının 2. sayıya tam bölünmesi durumunda
+            ///“Tam bölünüyor” yazan, aksi durumda Tam bölünmüyor diyerek kalanı ekranda gösteren örnek:
+            /// </summary>
+/*
+            int sayi1 = 0, sayi2 = 0;
+            double bolumSonucu;
+            Console.Write("Birinci Sayıyı Giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+            Console.Write("İkinci Sayıyı Giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.ReadKey();
+
+            if (sayi1 % sayi2 == 0)
+            {
+                Console.Write("Birinci Girilen {0} sayısı  İkinci Girilen {1} sayısına Tam Bölünmektedir.", sayi1, sayi2);
+
+            }
+            else
+            {
+                Console.Write("Birinci Girilen {0} sayısı  İkinci Girilen {1} sayısına Tam BÖLÜNMEMEKTEDİR.! ", sayi1, sayi2);
+            }
+
+            Console.ReadKey();
+*/
+            #endregion
         }
     }
 }
