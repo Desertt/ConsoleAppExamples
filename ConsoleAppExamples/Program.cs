@@ -871,29 +871,48 @@ namespace ConsoleAppExamples
             ///C# Console Uygulamasında Kullanıcıdan 2 tane sayı istenerek 1. sayının 2. sayıya tam bölünmesi durumunda
             ///“Tam bölünüyor” yazan, aksi durumda Tam bölünmüyor diyerek kalanı ekranda gösteren örnek:
             /// </summary>
-/*
-            int sayi1 = 0, sayi2 = 0;
-            double bolumSonucu;
-            Console.Write("Birinci Sayıyı Giriniz : ");
-            sayi1 = Convert.ToInt32(Console.ReadLine());
-            Console.ReadKey();
-            Console.Write("İkinci Sayıyı Giriniz : ");
-            sayi2 = Convert.ToInt32(Console.ReadLine());
-            Console.ReadKey();
+            /*
+                        int sayi1 = 0, sayi2 = 0;
+                        double bolumSonucu;
+                        Console.Write("Birinci Sayıyı Giriniz : ");
+                        sayi1 = Convert.ToInt32(Console.ReadLine());
+                        Console.ReadKey();
+                        Console.Write("İkinci Sayıyı Giriniz : ");
+                        sayi2 = Convert.ToInt32(Console.ReadLine());
+                        Console.ReadKey();
 
-            if (sayi1 % sayi2 == 0)
-            {
-                Console.Write("Birinci Girilen {0} sayısı  İkinci Girilen {1} sayısına Tam Bölünmektedir.", sayi1, sayi2);
+                        if (sayi1 % sayi2 == 0)
+                        {
+                            Console.Write("Birinci Girilen {0} sayısı  İkinci Girilen {1} sayısına Tam Bölünmektedir.", sayi1, sayi2);
 
-            }
-            else
-            {
-                Console.Write("Birinci Girilen {0} sayısı  İkinci Girilen {1} sayısına Tam BÖLÜNMEMEKTEDİR.! ", sayi1, sayi2);
-            }
+                        }
+                        else
+                        {
+                            Console.Write("Birinci Girilen {0} sayısı  İkinci Girilen {1} sayısına Tam BÖLÜNMEMEKTEDİR.! ", sayi1, sayi2);
+                        }
 
-            Console.ReadKey();
-*/
+                        Console.ReadKey();
+            */
             #endregion
+
+            #region Klavyeden girilen bir sayının faktoriyelini alan program
+            /*
+            int sayi;
+            int factorial = 1;
+            Console.Write("Faktöriyelini Hesaplamak İstediğiniz Sayıyı Giriniz : ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i<=sayi; i++)
+            {
+                factorial = factorial * i;
+                
+            }
+
+            
+            Console.Write("Sayının Faktöriyeli : " + factorial);
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
