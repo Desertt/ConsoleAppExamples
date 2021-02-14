@@ -913,6 +913,19 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Yarıçapı verilen dairenin çevresini hesaplayan örnek: (2 X Pİ X R)
+            /*
+            double rYarivap, cevreDaire;
+            const double pi = Math.PI;
+            Console.Write("Dairenin Yarıçapını Giriniz : ");
+            rYarivap = Convert.ToDouble(Console.ReadLine());
+            Console.ReadKey();
+            cevreDaire = 2 * rYarivap * pi;
+            Console.Write("Dairenin Çevresi : " + cevreDaire);
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
