@@ -926,6 +926,18 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region  0′ dan 10′ a kadar olan sayıların toplamını bulan program
+            /*int sayi;
+            int toplam=0;
+            for (int i = 0; i < 10; i++)
+            {
+                toplam += i;
+            }
+            Console.Write(toplam);
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
