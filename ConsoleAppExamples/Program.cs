@@ -978,6 +978,22 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region 1 den 100 e kadar olan sayılardan 5 e bölünenlerin adedini veren program.
+            /*
+            int count = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine(i);
+                    count++;
+                }
+            }
+            Console.Write("1 den 100'e kadar olan sayıların 5 'e bölünen adedi : " + count);
+            Console.ReadKey();
+            */
+            #endregion
+
 
         }
     }
