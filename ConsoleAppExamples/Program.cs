@@ -938,6 +938,36 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Klavyeden girilen bir sayıya kadar tek sayıların ve çift sayıların toplamını bulan program
+            /*
+            int sayi = 0;
+            int baslangic = 0;
+            int ciftToplam = 0;
+            int tekToplam = 0;
+            int sayac = 0;
+            Console.Write("Klavyeden Bir Sayı Giriniz : ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            for (int i = baslangic; i < sayi; i++)
+            {
+                if (i%2==0)
+                {
+                    ciftToplam += i;
+                }
+                else
+                {
+                    tekToplam += i;
+
+                }
+
+
+            }
+            Console.Write(sayi + " Sayısına Kadar Olan Tek Sayıların Toplamı : " + tekToplam +"\n");
+            Console.Write(sayi + " Sayısına Kadar Olan Çift Sayıların Toplamı : " + ciftToplam);
+            Console.ReadKey();
+            */
+            #endregion
+
+
         }
     }
 }
