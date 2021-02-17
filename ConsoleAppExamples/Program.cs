@@ -967,6 +967,17 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region a dan z ye kadar olan harfleri ekrana yazdıran program
+            /*
+            char i;
+            for (i = 'a'; i <= 'z'; i++)
+            {
+                Console.Write(i);
+            }
+            Console.ReadKey();
+            */
+            #endregion
+
 
         }
     }
