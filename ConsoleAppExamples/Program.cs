@@ -994,6 +994,29 @@ namespace ConsoleAppExamples
             */
             #endregion
 
+            #region Klavyeden girilen 10 adet sayıdan en büyük ve en küçük olanı bulan program
+            /*
+            int[] sayiDizi = new int[10];
+            int sayac=0;
+            Console.Write("10 Adet Sayı Giriniz \n");
+            for (int i = 0; i <10; i++)
+            {
+                sayac++;
+                Console.Write("{0} . Sayıyı Giriniz : ", sayac);
+                sayiDizi[i]= Convert.ToInt32(Console.ReadLine());
+
+            }
+            foreach (var item in sayiDizi)
+            {
+                Console.Write(item);
+
+            }
+
+            Console.ReadKey();
+
+            */
+            #endregion
+
 
         }
     }
