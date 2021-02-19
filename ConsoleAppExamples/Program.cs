@@ -995,7 +995,7 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Klavyeden girilen 10 adet sayıdan en büyük ve en küçük olanı bulan program
-
+            /*
             int[] sayiDizi = new int[10];
             int sayac = 0;
             int mak;
@@ -1026,11 +1026,30 @@ namespace ConsoleAppExamples
             Console.WriteLine("Dizi içindeki en büyük sayı:>>" + mak);
             Console.WriteLine("Dizi içindeki en küçük sayı:>>" + min);
             Console.ReadKey();
-
+            */
 
             #endregion
 
+            #region 50 den başlayıp 200 e kadar klavyeden girilen sayıya bölünen kaç adet sayı olduğunu veren program
+            /*
+            int baslangic = 50;
+             int bitis = 100;
+             int sayi = 0;
+             int count = 0;
+             Console.Write("Klavyeden bir sayı giriniz: ");
+             sayi = Convert.ToInt32(Console.ReadLine());
+             for (baslangic = 50; baslangic <= bitis; baslangic++)
+             {
+                 if (baslangic % sayi == 0)
+                 {
+                     count++;
+                 }
 
+             }
+             Console.Write("Klavyeden Girilen" + sayi + " değerine tam bölinen " + count + " adet sayı mevcuttur.");
+             Console.ReadKey();
+            */
+            #endregion
         }
     }
 }
