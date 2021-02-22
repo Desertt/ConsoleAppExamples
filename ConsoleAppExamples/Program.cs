@@ -1050,6 +1050,128 @@ namespace ConsoleAppExamples
              Console.ReadKey();
             */
             #endregion
+
+            #region Ortalamaya göre harf notunu bulan program
+            /*
+            
+            int vizeSonuc = 0;
+            int finalSonuc = 0;
+            double ortSonuc = 0;
+            Console.Write("Vize Sınav Sonucunuzu Giriniz : ");
+            vizeSonuc = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Final Sınav Sonucunuzu Giriniz : ");
+            finalSonuc = Convert.ToInt32(Console.ReadLine());
+            if (vizeSonuc < 0)
+
+            {
+
+                vizeSonuc = 0;
+
+            }
+
+            if (finalSonuc < 0)
+
+            {
+
+                finalSonuc = 0;
+
+            }
+
+            if (vizeSonuc > 100)
+
+            {
+
+                vizeSonuc = 100;
+
+            }
+
+            if (finalSonuc > 100)
+
+            {
+
+                finalSonuc = 100;
+
+            }
+
+            ortSonuc = Convert.ToDouble(vizeSonuc * 40 / 100 + finalSonuc * 60 / 100);
+
+            if (finalSonuc < 50)
+
+            {
+
+                Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: FF");
+
+                Console.Write(" Final Sınavından 50 Barajını Geçemediğiniz İçin Kaldınız!!!");
+
+            }
+
+            else
+
+            {
+
+                if (ortSonuc >= 90 && ortSonuc <= 100)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: AA");
+
+                }
+
+                else if (ortSonuc >= 80 && ortSonuc < 90)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: BA");
+
+                }
+
+                else if (ortSonuc >= 70 && ortSonuc < 80)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: BB");
+
+                }
+
+                else if (ortSonuc >= 60 && ortSonuc < 70)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: CB");
+
+                }
+
+                else if (ortSonuc >= 50 && ortSonuc < 60)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: CC");
+
+                }
+
+                else if (ortSonuc >= 45 && ortSonuc < 50)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: DD");
+
+                }
+
+                else if (ortSonuc >= 0 && ortSonuc < 45)
+
+                {
+
+                    Console.Write(" Ortalamanız: " + ortSonuc + " Harf Notunuz: FF");
+
+                }
+
+            }
+
+            Console.ReadKey();
+
+            */
+
+            #endregion
         }
     }
 }
