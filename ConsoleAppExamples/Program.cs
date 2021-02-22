@@ -1174,34 +1174,36 @@ namespace ConsoleAppExamples
             #endregion
 
             #region Klavyeden girilen bir sayının seçime bağlı olarak karesini, küpünü ve karekökünü alan programı yazınız.
-            int sayi = 0;
-            int secim;
-            double kare, kok, kup;
-            Console.Write("Sayi Giriniz : ");
-            sayi = Convert.ToInt32(Console.ReadLine());
-            Console.Write("1-Kare , 2-Kok , 3-Küp\n");
-            Console.WriteLine();
-            Console.Write("Seçiminiz= ");
-            secim = int.Parse(Console.ReadLine());
-            if (secim == 1)
-            {
-                kare = sayi * sayi;
-                Console.Write("Girdiğiniz sayının karesi= {0}", kare);
+            /*
+             int sayi = 0;
+             int secim;
+             double kare, kok, kup;
+             Console.Write("Sayi Giriniz : ");
+             sayi = Convert.ToInt32(Console.ReadLine());
+             Console.Write("1-Kare , 2-Kok , 3-Küp\n");
+             Console.WriteLine();
+             Console.Write("Seçiminiz= ");
+             secim = int.Parse(Console.ReadLine());
+             if (secim == 1)
+             {
+                 kare = sayi * sayi;
+                 Console.Write("Girdiğiniz sayının karesi= {0}", kare);
 
-            }
-            if (secim == 2)
-            {
-                kup = sayi * sayi * sayi;
-                Console.Write("Girdiğiniz sayının karesi= {0}", kup);
+             }
+             if (secim == 2)
+             {
+                 kup = sayi * sayi * sayi;
+                 Console.Write("Girdiğiniz sayının karesi= {0}", kup);
 
-            }
+             }
 
-            else if (secim == 3)
-            {
-                kok = Math.Sqrt(sayi);
-                Console.Write("Girdiğiniz sayının kökü= {0}", kok);
-            }
-            Console.ReadKey();
+             else if (secim == 3)
+             {
+                 kok = Math.Sqrt(sayi);
+                 Console.Write("Girdiğiniz sayının kökü= {0}", kok);
+             }
+             Console.ReadKey();
+            */
             #endregion
         }
     }
