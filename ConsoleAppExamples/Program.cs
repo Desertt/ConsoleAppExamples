@@ -1205,6 +1205,17 @@ namespace ConsoleAppExamples
              Console.ReadKey();
             */
             #endregion
+
+            #region DiziOrnegi
+            /*
+             string[] diziEleman ={ "A", "B", "C", "D", "E", "F", "G" };
+             foreach (var harfler in diziEleman)
+             {
+                 Console.Write(harfler + "\n");
+             }
+             Console.ReadKey();
+            */
+            #endregion
         }
     }
 }
