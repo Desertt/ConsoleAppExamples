@@ -1206,7 +1206,7 @@ namespace ConsoleAppExamples
             */
             #endregion
 
-            #region DiziOrnegi
+            #region DiziOrnegi1
             /*
              string[] diziEleman ={ "A", "B", "C", "D", "E", "F", "G" };
              foreach (var harfler in diziEleman)
@@ -1216,6 +1216,26 @@ namespace ConsoleAppExamples
              Console.ReadKey();
             */
             #endregion
+
+            #region DiziOrnegi2
+            /*
+             int[] diziEleman = new int[10];
+             Random rndNumber = new Random();
+             for (int i = 0; i < diziEleman.Length; i++)
+             {
+                 diziEleman[i] = rndNumber.Next(1, 10);
+
+             }
+
+             foreach (var item in diziEleman)
+             {
+                 Console.Write(item + "\n");
+             }
+             Console.ReadKey();
+
+             */
+            #endregion
+
         }
     }
 }
