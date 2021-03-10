@@ -1236,6 +1236,28 @@ namespace ConsoleAppExamples
              */
             #endregion
 
+            #region Dizilere dışardan veri girişi ve veri okunması
+            /*
+            int sayi;
+            int[] dizi = new int[10];
+            int sayac=0;
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                Console.Write(i + ". Sayıyı Giriniz : ");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                dizi[i] = sayi;
+            }
+            foreach (var item in dizi)
+            {
+                
+                Console.Write("Diziye Girilen " + sayac +". Sayı : " + item + "\n");
+                sayac++;
+            }
+
+            Console.ReadKey();
+            */
+            #endregion
+
         }
     }
 }
